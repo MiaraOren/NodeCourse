@@ -56,6 +56,11 @@ app.get('/about', (req, res) => {
    }); 
 });
 
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', { 
+        pageTitle: 'Projects'
+    });
+});
 
 // Start server by listening to port 8080
 app.listen(port);
